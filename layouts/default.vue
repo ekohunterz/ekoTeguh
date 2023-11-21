@@ -3,6 +3,14 @@ const { data: menu } = await useFetch("/api/menu");
 
 const isOpen = ref(false);
 const { isMobile } = useDevice();
+
+function scrollTop() {
+  // For Chrome, Firefox, IE, dan Opera
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
 </script>
 
 <template>
@@ -23,6 +31,13 @@ const { isMobile } = useDevice();
         <div class="flex flex-col gap-5">
           <Menu v-for="item in menu" :icon="item.icon" :link="item.href">{{ item.title }}</Menu>
         </div>
+      </div>
+      <div class="fixed bottom-10 right-10 lg:right-20">
+        <UTooltip text="To The Top" :shortcuts="['⌘', 'O']">
+          <div @click="scrollTop" class="p-3 border animate-bounce hover:text-primary hover:border-primary hover:cursor-pointer duration-300 ease-in-out text-white rounded-full border-abu-1">
+            <NuxtLink><Icon name="mdi:chevron-up" size="24" /></NuxtLink>
+          </div>
+        </UTooltip>
       </div>
     </div>
 

@@ -31,7 +31,7 @@ const { isMobile } = useDevice();
             <Icon name="mdi:email-outline" /> Hire Me!
           </NuxtLink>
         </div>
-        <div data-aos="fade-left" class="flex mt-16" id="home">
+        <div data-aos="fade-left" class="flex mt-16 lg:mt-0" id="home">
           <div class="border flex items-center px-6 py-2 border-abu-2 rounded-full font-extralight"><Icon name="mdi:home-outline" size="20" />&nbsp; Introduce</div>
         </div>
 

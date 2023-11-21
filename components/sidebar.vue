@@ -16,10 +16,10 @@ const { isMobile } = useDevice();
       <p class="text-sm mt-8 text-abu-1">© 2023 Eko Teguh M. All Rights Reserved</p>
     </div>
     <div class="flex gap-2 mt-7 justify-center">
-      <IconSosmed :name="'mdi:github'" />
-      <IconSosmed :name="'mdi:instagram'" />
-      <IconSosmed :name="'mdi:facebook'" />
-      <IconSosmed :name="'mdi:linkedin'" />
+      <IconSosmed link="https://github.com/ekohunterz/" :name="'mdi:github'" />
+      <IconSosmed link="https://www.instagram.com/ekoteguh.m/" :name="'mdi:instagram'" />
+      <IconSosmed link="https://www.facebook.com/Ryuuza01/" :name="'mdi:facebook'" />
+      <IconSosmed link="https://www.linkedin.com/in/eko-teguh-muhammadi-3614b1144/" :name="'mdi:linkedin'" />
     </div>
     <NuxtLink
       to="mailto:ekohunterz@gmail.com"
