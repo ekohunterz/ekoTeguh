@@ -30,11 +30,13 @@ const data = projects.value.find((project) => project.id == projectID);
 
         <div class="mt-6 flex flex-wrap gap-4">
           <NuxtLink
+            v-if="data.links.github"
             :to="data.links.github"
             class="border-2 flex items-center border-white hover:border-primary hover:text-primary duration-300 ease-in-out bg-transparent hover:scale-105 text-white px-4 py-2 rounded-full"
             >Github&nbsp;<Icon name="mdi:github"
           /></NuxtLink>
           <NuxtLink
+            v-if="data.links.demo"
             :to="data.links.demo"
             class="border-2 flex items-center border-white hover:border-primary hover:text-primary duration-300 ease-in-out bg-transparent hover:scale-105 text-white px-4 py-2 rounded-full"
             >Demo&nbsp;<Icon name="mdi:open-in-new"

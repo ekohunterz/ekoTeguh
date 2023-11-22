@@ -31,14 +31,14 @@ const { isMobile } = useDevice();
             <Icon name="mdi:email-outline" /> Hire Me!
           </NuxtLink>
         </div>
-        <div data-aos="fade-left" class="flex mt-16 lg:mt-0" id="home">
+        <div data-aos="fade-left" data-aos-duration="3000" class="flex mt-16 lg:mt-0" id="home">
           <div class="border flex items-center px-6 py-2 border-abu-2 rounded-full font-extralight"><Icon name="mdi:home-outline" size="20" />&nbsp; Introduce</div>
         </div>
 
-        <div data-aos="fade-left" class="mt-20 lg:text-[78px] text-5xl font-light leading-tight">
+        <div data-aos="fade-right" data-aos-duration="3000" class="mt-20 lg:text-[78px] text-5xl font-light leading-tight">
           Hi, I'm <span class="text-primary block">Eko Teguh Muhammadi,</span> <span class="block">Web Developer</span>
         </div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="mt-10 font-light text-abu-1">
+        <div data-aos="fade-left" data-aos-duration="3000" class="mt-10 font-light text-abu-1">
           I design and code beautifully simple things and i love what i do. <span class="block">Just simple like that!</span>
         </div>
       </div>
