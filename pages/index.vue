@@ -28,7 +28,7 @@ const { isMobile } = useDevice();
             to="mailto:ekohunterz@gmail.com"
             class="block bg-primary mt-7 hover:bg-opacity-0 border-2 hover:text-primary duration-500 hover:cursor-pointer border-primary p-4 rounded-full text-center text-dark-950 uppercase"
           >
-            <Icon name="mdi:email-outline" /> Hire Me!
+            <Icon name="mdi:email-outline" /> {{ $t("form.hire_me") }}
           </NuxtLink>
         </div>
         <div data-aos="fade-left" data-aos-duration="3000" class="flex mt-16 lg:mt-0" id="home">
