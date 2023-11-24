@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-  <NuxtLink :to="`/project/${id}`" class="group hover:cursor-pointer overflow-hidden">
+  <NuxtLink :to="localePath(`/project/${id}`)" class="group hover:cursor-pointer overflow-hidden">
     <div class="relative rounded-xl overflow-hidden">
       <NuxtImg loading="lazy" class="group-hover:scale-110 duration-300 ease-in-out" :src="img" />
       <div class="absolute invisible group-hover:visible ease-in-out bg-dark-950/25 w-full h-full top-0">

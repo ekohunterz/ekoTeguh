@@ -52,7 +52,7 @@ onMounted(() => {
       arrow: { background: ' before:bg-gray-700 dark:before:bg-gray-800', ring: 'before:ring-0' },
     }"
   >
-    <NuxtLink :to="link" :class="{ 'text-primary': isActive }" class="hover:scale-110 text-abu-1 hover:text-primary"><Icon :name="icon" size="24" /></NuxtLink>
+    <NuxtLink :to="localePath(link)" :class="{ 'text-primary': isActive }" class="hover:scale-110 text-abu-1 hover:text-primary"><Icon :name="icon" size="24" /></NuxtLink>
     <template #text>
       <span><slot /></span>
     </template>

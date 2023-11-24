@@ -7,7 +7,7 @@ export default defineEventHandler(() => {
       title: "School Attendance System",
       content: {
         en: "This system provides an efficient way for teachers  to manage attendance records, monitor students punctuality, and generate attendance reports.",
-        id: "Pariatur reprehenderit proident magna sint aute exercitation adipisicing laborum laborum do cupidatat aute dolor.",
+        id: "Sistem ini memberikan cara yang efisien bagi guru untuk mengelola catatan kehadiran, memantau ketepatan waktu siswa, dan menghasilkan laporan kehadiran.",
       },
       image: "/absen-laravel.png",
       stack: ["Laravel", "MySQL", "Bootstrap"],
@@ -21,7 +21,7 @@ export default defineEventHandler(() => {
       title: "Expert System Bayes",
       content: {
         en: "This system aims to assist cat owners and veterinarians in making informed decisions about their pets health by offering reliable diagnostic suggestions.",
-        id: "Non qui incididunt eu consectetur mollit excepteur irure et minim excepteur incididunt fugiat nulla.",
+        id: "Sistem ini bertujuan untuk membantu pemilik kucing dan dokter hewan dalam mengambil keputusan berdasarkan informasi tentang kesehatan hewan peliharaan mereka dengan menawarkan saran diagnostik yang andal.",
       },
       image: "/bayes.png",
       stack: ["Laravel", "MySQL", "Bootstrap"],
@@ -35,7 +35,7 @@ export default defineEventHandler(() => {
       title: "Library Management System",
       content: {
         en: "This system aims to automate library operations, enhance accessibility to resources, and promote a culture of reading and learning among students and staff.",
-        id: "Laborum pariatur amet cillum mollit amet.",
+        id: "Sistem ini bertujuan untuk mengotomatiskan operasional perpustakaan, meningkatkan aksesibilitas terhadap sumber daya, dan mempromosikan budaya membaca dan belajar di kalangan siswa dan staf.",
       },
       image: "/perpus.png",
       stack: ["Laravel", "MySQL", "Bootstrap"],
@@ -49,7 +49,7 @@ export default defineEventHandler(() => {
       title: "Islamic Simple App",
       content: {
         en: "This is a simple Web application for the Islamic religion, built with Nuxt 3. This feature include read Qur'an, Prayer Schedule and Collection of Prayers",
-        id: "Consectetur amet eu ad excepteur ea sit do dolore occaecat quis aliqua.",
+        id: "Ini adalah aplikasi Web sederhana untuk agama Islam, dibangun dengan Nuxt 3. Fitur ini meliputi Bacaan Al-Qur'an, Jadwal Sholat dan Kumpulan Doa",
       },
       image: "/quran.png",
       stack: ["Laravel", "MySQL", "Bootstrap"],

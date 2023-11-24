@@ -1,0 +1,37 @@
+{
+  "hello": "Hai, Saya",
+  "about_me": "Halo, nama saya Eko Teguh Muhammadi. Saya tinggal di Kota Cilegon, Banten, Indonesia. Saya adalah seseorang yang tertarik pada dunia komputer dan teknologi. Saya mulai belajar pemrograman pada tahun 2019. Sejak itu, saya secara bertahap meningkatkan keterampilan saya hingga sekarang dan akan terus meningkatkan di masa depan serta selalu menjelajahi hal-hal baru. Saya suka belajar hal-hal baru, menulis beberapa kode, menciptakan beberapa bug, dan bermain video game.",
+  "caption": "Saya terus mencoba untuk mempelajari hal baru. Sesimpel itu!",
+  "me": "Saya",
+  "language": "Bahasa",
+  "pageTitles": {
+    "about": "Tentang",
+    "introduce": "Perkenalan",
+    "portfolio": "Portofolio",
+    "skill": "Keterampilan",
+    "contact": "Kontak",
+    "certificates": "Sertifikat"
+  },
+  "education": {
+    "title": "Pendidikan",
+    "bachelor": {
+      "name": "Universitas Serang Raya",
+      "title": "Sarjana Komputer",
+      "major": "Teknik Informatika | IPK: 3.73"
+    },
+    "school": {
+      "name": "SMKN 1 Kota Cilegon",
+      "title": "Sekolah Menengah Kejuruan",
+      "major": "Teknik Komputer & Jaringan"
+    }
+  },
+  "form": {
+    "fullname": "Nama Lengkap",
+    "message": "Pesan",
+    "your_name": "Nama Anda",
+    "your_email": "Email Anda",
+    "your_message": "Pesan Anda",
+    "send_message": "Kirim Pesan",
+    "hire_me": "Rekrut Saya!"
+  }
+}

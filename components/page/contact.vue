@@ -22,11 +22,13 @@ async function onSubmit() {
 <template>
   <div class="relative min-h-screen lg:pe-24 py-20">
     <div data-aos="fade-up-left" data-aos-duration="3000" class="flex" id="contact">
-      <div class="border flex items-center px-6 py-2 border-abu-2 rounded-full font-extralight"><Icon name="mdi:phone-outline" size="20" />&nbsp; Contact</div>
+      <div class="border flex items-center px-6 py-2 border-abu-2 rounded-full font-extralight"><Icon name="mdi:phone-outline" size="20" />&nbsp; {{ $t("pageTitles.contact") }}</div>
     </div>
 
     <div data-aos="fade-up-right" data-aos-duration="3000">
-      <div class="mt-20 text-5xl font-light leading-snug">Contact <span class="text-primary">Me</span></div>
+      <div class="mt-20 text-5xl font-light leading-snug">
+        {{ $t("pageTitles.contact") }} <span class="text-primary">{{ $t("me") }}</span>
+      </div>
       <NuxtLink href="mailto:ekohunterz@gmail.com" class="text-2xl font-light mt-8 hover:underline hover:text-primary duration-500 ea">ekohunterz@gmail.com</NuxtLink>
     </div>
 
@@ -35,7 +37,7 @@ async function onSubmit() {
         <UFormGroup
           data-aos="fade-up-left"
           data-aos-duration="3000"
-          label="Full Name"
+          :label="$t('form.fullname')"
           required
           name="name"
           :ui="{
@@ -48,7 +50,7 @@ async function onSubmit() {
             size="xl"
             variant="none"
             required
-            placeholder="Your Name"
+            :placeholder="$t('form.your_name')"
             :ui="{
               padding: { xl: 'px-0' },
               size: { xl: 'text-xl' },
@@ -73,7 +75,7 @@ async function onSubmit() {
             size="xl"
             variant="none"
             required
-            placeholder="Your Email"
+            :placeholder="$t('form.your_email')"
             :ui="{
               padding: { xl: 'px-0' },
               size: { xl: 'text-xl' },
@@ -84,7 +86,7 @@ async function onSubmit() {
         <UFormGroup
           data-aos="fade-up-left"
           data-aos-duration="3000"
-          label="Message"
+          :label="$t('form.message')"
           name="message"
           required
           :ui="{
@@ -95,7 +97,7 @@ async function onSubmit() {
         >
           <UTextarea
             variant="none"
-            placeholder="Your Message"
+            :placeholder="$t('form.your_message')"
             autoresize
             required
             size="xl"
@@ -112,9 +114,9 @@ async function onSubmit() {
           data-aos="fade-up-left"
           data-aos-duration="3000"
           type="submit"
-          class="bg-primary px-12 py-4 rounded-full mt-3 hover:text-primary border-2 border-primary hover:bg-opacity-0 duration-500 ease-in-out text-dark-950"
+          class="bg-primary px-12 py-4 rounded-full mt-3 hover:text-primary border-2 border-primary hover:bg-opacity-0 duration-500 ease-in-out text-dark-950 capitalize"
         >
-          SEND MESSAGE
+          {{ $t("form.send_message") }}
         </button>
       </form>
     </div>

@@ -1,4 +1,7 @@
 <script setup>
+import { useI18n } from "vue-i18n";
+const { locale } = useI18n({ useScope: "global" });
+
 const { data: projects } = await useFetch("/api/projects");
 
 const route = useRoute();
@@ -16,7 +19,7 @@ const data = projects.value.find((project) => project.id == projectID);
     <div class="container lg:px-28">
       <div class="relative min-h-screen lg:pe-24 py-12 lg:py-20">
         <div class="flex">
-          <div class="border flex items-center px-6 py-2 border-abu-2 rounded-full font-extralight"><Icon name="carbon:portfolio" size="20" />&nbsp; Portfolio</div>
+          <div class="border flex items-center px-6 py-2 border-abu-2 rounded-full font-extralight"><Icon name="carbon:portfolio" size="20" />&nbsp; {{ $t("pageTitles.portfolio") }}</div>
         </div>
 
         <div class="mt-16 text-4xl font-light leading-snug">
@@ -26,7 +29,7 @@ const data = projects.value.find((project) => project.id == projectID);
         <div class="mt-6 flex flex-wrap gap-3">
           <div v-for="(tech, index) in data.stack" :key="index" class="text-primary border-2 border-primary bg-transparent rounded-full py-2 px-4">{{ tech }}</div>
         </div>
-        <p v-html="data.content.en" class="mt-6 lg:w-3/4 text-abu-1"></p>
+        <p v-html="locale === 'en' ? data.content?.en : data.content?.id" class="mt-6 lg:w-3/4 text-abu-1"></p>
 
         <div class="mt-6 flex flex-wrap gap-4">
           <NuxtLink

@@ -19,10 +19,10 @@ const { isMobile } = useDevice();
             <p class="text-sm mt-8 text-abu-1">© 2023 Eko Teguh M. All Rights Reserved</p>
           </div>
           <div class="flex gap-2 mt-7 justify-center">
-            <IconSosmed :name="'mdi:github'" />
-            <IconSosmed :name="'mdi:instagram'" />
-            <IconSosmed :name="'mdi:facebook'" />
-            <IconSosmed :name="'mdi:linkedin'" />
+            <IconSosmed link="https://github.com/ekohunterz/" :name="'mdi:github'" />
+            <IconSosmed link="https://www.instagram.com/ekoteguh.m/" :name="'mdi:instagram'" />
+            <IconSosmed link="https://www.facebook.com/Ryuuza01/" :name="'mdi:facebook'" />
+            <IconSosmed link="https://www.linkedin.com/in/eko-teguh-muhammadi-3614b1144/" :name="'mdi:linkedin'" />
           </div>
           <NuxtLink
             to="mailto:ekohunterz@gmail.com"
@@ -32,15 +32,13 @@ const { isMobile } = useDevice();
           </NuxtLink>
         </div>
         <div data-aos="fade-left" data-aos-duration="3000" class="flex mt-16 lg:mt-0" id="home">
-          <div class="border flex items-center px-6 py-2 border-abu-2 rounded-full font-extralight"><Icon name="mdi:home-outline" size="20" />&nbsp; Introduce</div>
+          <div class="border flex items-center px-6 py-2 border-abu-2 rounded-full font-extralight"><Icon name="mdi:home-outline" size="20" />&nbsp; {{ $t("pageTitles.introduce") }}</div>
         </div>
 
         <div data-aos="fade-right" data-aos-duration="3000" class="mt-20 lg:text-[78px] text-5xl font-light leading-tight">
-          Hi, I'm <span class="text-primary block">Eko Teguh Muhammadi,</span> <span class="block">Web Developer</span>
+          {{ $t("hello") }} <span class="text-primary block">Eko Teguh Muhammadi,</span> <span class="block">Web Developer</span>
         </div>
-        <div data-aos="fade-left" data-aos-duration="3000" class="mt-10 font-light text-abu-1">
-          I design and code beautifully simple things and i love what i do. <span class="block">Just simple like that!</span>
-        </div>
+        <div data-aos="fade-left" data-aos-duration="3000" class="mt-10 font-light text-abu-1" v-html="$t('caption')"></div>
       </div>
       <PageAbout />
       <PageSkill />

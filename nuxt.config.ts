@@ -21,8 +21,27 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/image", "@nuxtjs/google-fonts", "nuxt-icon", "@nuxt/ui", "nuxt-particles", "@nuxtjs/device"],
-
+  modules: ["@nuxt/image", "@nuxtjs/google-fonts", "nuxt-icon", "@nuxt/ui", "nuxt-particles", "@nuxtjs/device", "@nuxtjs/i18n"],
+  i18n: {
+    lazy: true,
+    langDir: "locales",
+    strategy: "prefix_except_default",
+    defaultLocale: "en",
+    locales: [
+      {
+        code: "en",
+        iso: "en-US",
+        name: "English",
+        file: "en.json",
+      },
+      {
+        code: "id-ID",
+        iso: "id-ID",
+        name: "Bahasa Indonesia",
+        file: "id-ID.json",
+      },
+    ],
+  },
   googleFonts: {
     families: {
       Roboto: true,
