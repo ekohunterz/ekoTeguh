@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import emailjs from "@emailjs/browser";
 
-const form = ref();
-const successMessage = ref("");
-const errorMessage = ref("");
+const form = ref<any>();
+const successMessage = ref<string>("");
+const errorMessage = ref<string>("");
 
 async function onSubmit() {
   emailjs.sendForm("service_30ghp26", "template_fkz8nqx", form.value, "o2fVgPqnXgrsimN67").then(
@@ -114,7 +114,7 @@ async function onSubmit() {
           data-aos="fade-up-left"
           data-aos-duration="3000"
           type="submit"
-          class="bg-primary px-12 py-4 rounded-full mt-3 hover:text-primary border-2 border-primary hover:bg-opacity-0 duration-500 ease-in-out text-dark-950 capitalize"
+          class="bg-primary px-12 py-4 rounded-full mt-3 hover:text-primary border-2 border-primary hover:bg-opacity-0 duration-500 ease-in-out text-dark-950 uppercase"
         >
           {{ $t("form.send_message") }}
         </button>

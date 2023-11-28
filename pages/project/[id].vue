@@ -1,14 +1,14 @@
-<script setup>
+<script setup lang="ts">
 import { useI18n } from "vue-i18n";
 const { locale } = useI18n({ useScope: "global" });
 
-const { data: projects } = await useFetch("/api/projects");
+const { data: projects } = await useFetch<any>("/api/projects");
 
 const route = useRoute();
 
 const projectID = route.params.id;
 
-const data = projects.value.find((project) => project.id == projectID);
+const data = projects.value.find((project: any) => project.id == projectID);
 </script>
 
 <template>

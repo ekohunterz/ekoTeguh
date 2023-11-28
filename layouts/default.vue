@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { useI18n } from "vue-i18n";
 const { locale } = useI18n({ useScope: "global" });
 
@@ -64,7 +64,7 @@ function scrollTop() {
         width: 'w-screen md:max-w-md max-w-xs',
       }"
     >
-      <div class="p-24 flex-1 text-white bg-dark-950">
+      <div class="ps-24 pe-12 pt-24 flex-1 text-white bg-dark-950">
         <div class="text-xl">Menu</div>
         <div class="mt-8 text-sm">
           <div class="flex gap-4 flex-col">

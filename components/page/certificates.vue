@@ -1,11 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import { useI18n } from "vue-i18n";
 const { locale } = useI18n({ useScope: "global" });
 
-const isOpen = ref(false);
-const srcImg = ref("");
+const isOpen = ref<boolean>(false);
+const srcImg = ref<string>("");
 
-const openModal = (img) => {
+const openModal = (img: string) => {
   isOpen.value = true;
   srcImg.value = img;
 };

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
   icon: {
     type: String,
@@ -9,12 +9,6 @@ const props = defineProps({
     required: true,
   },
 });
-
-// const route = useRoute();
-
-// const isActiveSection = (sectionLink) => {
-//   return route.fullPath === sectionLink;
-// };
 
 const isActive = ref(false);
 const sec = props.link.substring(1);
