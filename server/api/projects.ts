@@ -20,13 +20,13 @@ export default defineEventHandler(() => {
       id: 2,
       title: 'Expert System Bayes',
       content: {
-        en: 'This system aims to assist cat owners and veterinarians in making informed decisions about their pets health by offering reliable diagnostic suggestions.',
-        id: 'Sistem ini bertujuan untuk membantu pemilik kucing dan dokter hewan dalam mengambil keputusan berdasarkan informasi tentang kesehatan hewan peliharaan mereka dengan menawarkan saran diagnostik yang andal.'
+        en: 'This system aims to help diagnose a disease based on symptoms that have been experienced.',
+        id: 'Sistem ini bertujuan untuk membantu mendiagnosa suatu penyakit berdasarkan gejala yang dialami.'
       },
       image: '/bayes.png',
-      stack: ['Laravel', 'MySQL', 'Bootstrap'],
+      stack: ['Laravel', 'MySQL', 'Vue 3'],
       links: {
-        github: '',
+        github: 'https://github.com/ekohunterz/sistemPakar_Theorema_Bayes',
         demo: ''
       }
     },
