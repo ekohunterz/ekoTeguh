@@ -65,10 +65,10 @@ export default defineEventHandler(() => {
         en: 'A simple Web application for Cashier, built with Laravel and Vue 3. This feature include Transaction and Sales Report',
         id: 'Aplikasi kasir sederhana dibangun menggunakan Laravel sebagai backend dan Vue 3 sebagai frontend. Fitur yang tersedia yaitu transaksi dan laporan penjualan'
       },
-      image: '/cashier.png',
+      image: 'https://github.com/user-attachments/assets/ba3e3312-b858-44ed-a7a9-54bff3b8545f',
       stack: ['Laravel', 'MySQL', 'Tailwind', 'Vue 3'],
       links: {
-        github: '',
+        github: 'https://github.com/ekohunterz/Kasir-Laravel',
         demo: ''
       }
     }
